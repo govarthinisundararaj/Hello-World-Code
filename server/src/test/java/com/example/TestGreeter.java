@@ -24,10 +24,10 @@ public class TestGreeter {
     assertThat(greeter.greet(someone), containsString(someone));
   }
  @Test
-  public void greetShouldIncludeTheOneBeing() {
-    String someone = "World";
-
-    assertThat(greeter.greet(someone), containsString(someone));
+  public void greetShouldIncludeTheOneBeingequal() {
+    String someone = "hello";
+    assertThat(someone,matches("hello"));
+    
   }
   @Test
   public void greetShouldIncludeGreetingPhrase() {
