@@ -26,7 +26,7 @@ public class TestGreeter {
  @Test
   public void greetShouldIncludeTheOneBeingequal() {
     String someone = "hello";
-    assertThat(someone,matches("hello"));
+    assertThat(greeter.greet(someone).length(), is(someone.length()));
     
   }
   @Test
